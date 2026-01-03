@@ -1,5 +1,6 @@
 import { WaterDrop, PhoneIcon } from "@/components/icons";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const scrollToSection = (id: string) => {
@@ -36,11 +37,29 @@ const Header = () => {
               Servicios
             </button>
             <button
+              onClick={() => scrollToSection("infraestructura")}
+              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+            >
+              Infraestructura
+            </button>
+            <button
+              onClick={() => scrollToSection("equipo")}
+              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+            >
+              Equipo
+            </button>
+            <button
               onClick={() => scrollToSection("nosotros")}
               className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
             >
               Nosotros
             </button>
+            <Link
+              to="/tarifas-acuerdos"
+              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+            >
+              Tarifas
+            </Link>
             <button
               onClick={() => scrollToSection("contacto")}
               className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"

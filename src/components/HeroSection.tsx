@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { WaterDrop } from "@/components/icons";
 import WaveBackground from "@/components/WaveBackground";
-import heroImage from "@/assets/hero-water.jpg";
+import heroImage from "@/assets/hero-lake.jpg";
 
 const HeroSection = () => {
   const scrollToContact = () => {

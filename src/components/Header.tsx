@@ -1,7 +1,6 @@
 import { PhoneIcon } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import logoSsr from "@/assets/logo-ssr.png";
 
 const Header = () => {
   const scrollToSection = (id: string) => {
@@ -14,7 +13,6 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
-            <img src={logoSsr} alt="SSR Maicolpue Logo" className="w-12 h-12 object-contain" />
             <div>
               <h1 className="font-display font-bold text-lg text-foreground">SSR Maicolpue</h1>
               <p className="text-xs text-muted-foreground">Agua Potable Rural</p>

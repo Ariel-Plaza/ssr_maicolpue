@@ -8,34 +8,34 @@ interface InfrastructureItem {
 
 const infrastructureItems: InfrastructureItem[] = [
   {
-    title: "Estanques de Almacenamiento",
-    description: "Capacidad de almacenamiento para garantizar suministro continuo",
-    imagePlaceholder: "Foto de estanques",
+    title: "Bomba de Captación",
+    description: "Mediante la cual se traslada el agua obtenida desde el río hasta nuestro estanque.",
+    imagePlaceholder: "Foto de bomba de captación",
   },
   {
-    title: "Sistema de Bombeo",
-    description: "Bombas de alta eficiencia para distribución óptima",
-    imagePlaceholder: "Foto de bomba",
+    title: "Estanque Principal",
+    description: "Capacidad de 100.000 Lts, desde el cual se distribuye agua hacia todas las sentinas.",
+    imagePlaceholder: "Foto de estanque principal",
   },
   {
-    title: "Captación de Agua",
-    description: "Punto de captación desde fuentes naturales protegidas",
-    imagePlaceholder: "Foto de captación",
+    title: "Válvula de Ventos",
+    description: "Sirve para retirar el aire que está en la matriz de distribución.",
+    imagePlaceholder: "Foto de válvula de ventos",
   },
   {
-    title: "Planta de Tratamiento",
-    description: "Proceso de purificación y cloración del agua",
-    imagePlaceholder: "Foto de planta",
+    title: "Estanque Secundario",
+    description: "Recibe y distribuye el agua a Maicolpue Río Sur y camino Tril Tril.",
+    imagePlaceholder: "Foto de estanque secundario",
   },
   {
-    title: "Red de Distribución",
-    description: "Tuberías y válvulas de distribución comunitaria",
-    imagePlaceholder: "Foto de red",
+    title: "Estanques Auxiliares",
+    description: "Almacenamos agua para tener siempre disponible en caso de corte o emergencia.",
+    imagePlaceholder: "Foto de estanques auxiliares",
   },
   {
-    title: "Medidores",
-    description: "Sistema de medición para cada hogar conectado",
-    imagePlaceholder: "Foto de medidores",
+    title: "Oficina",
+    description: "Ubicada en Playa Central, es base de nuestros operadores para la mantención de la red.",
+    imagePlaceholder: "Foto de oficina",
   },
 ];
 
@@ -45,10 +45,10 @@ const InfrastructureSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-display font-bold text-3xl md:text-4xl text-foreground mb-4">
-            Nuestra Infraestructura
+            Nuestras Instalaciones
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Conoce los equipos y sistemas que hacen posible llevar agua potable de calidad a tu hogar
+            Ubicadas en lugares estratégicos para suministrar agua a toda nuestra red
           </p>
         </div>
 

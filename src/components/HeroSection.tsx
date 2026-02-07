@@ -38,7 +38,7 @@ const HeroSection = () => {
             className="font-display font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-card mb-6 opacity-0 animate-fade-in"
             style={{ animationDelay: "0.2s" }}
           >
-            Agua Pura para
+            Proveemos Agua a
             <span className="block mt-2">Maicolpue</span>
           </h1>
 
@@ -46,8 +46,8 @@ const HeroSection = () => {
             className="text-lg sm:text-xl text-card/90 max-w-2xl mx-auto mb-10 font-body opacity-0 animate-fade-in"
             style={{ animationDelay: "0.4s" }}
           >
-            Suministramos agua potable de la más alta calidad a los hogares de Maicolpue,
-            Región de Los Lagos. Comprometidos con tu bienestar y el cuidado del recurso más vital.
+            Extraída desde el río Maicolpi, agua purificada desde la cordillera de la costa.
+            Potabilizada en origen para los hogares de Maicolpue, Región de Los Lagos.
           </p>
 
           <div
@@ -68,8 +68,8 @@ const HeroSection = () => {
             style={{ animationDelay: "0.8s" }}
           >
             <div className="text-center">
-              <p className="font-display font-bold text-3xl sm:text-4xl text-card">+500</p>
-              <p className="text-sm text-card/70">Hogares</p>
+              <p className="font-display font-bold text-3xl sm:text-4xl text-card">90%</p>
+              <p className="text-sm text-card/70">Cobertura</p>
             </div>
             <div className="text-center">
               <p className="font-display font-bold text-3xl sm:text-4xl text-card">24/7</p>

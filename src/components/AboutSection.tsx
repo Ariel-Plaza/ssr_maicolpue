@@ -49,22 +49,22 @@ const AboutSection = () => {
               Sobre Nosotros
             </span>
             <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-foreground mb-6">
-              Agua Potable Rural de Maicolpue
+              Agua Purificada por la Naturaleza y Potabilizada en Origen
             </h2>
             <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
               <p>
-                Somos el <strong className="text-foreground">Sistema Sanitario Rural (SSR)</strong> de Maicolpue,
-                una organización comprometida con el suministro de agua potable de calidad para
-                nuestra comunidad en la hermosa Región de Los Lagos.
+                Nuestra prístina agua fluye desde la <strong className="text-foreground">cordillera de la costa</strong>. 
+                El río Maicolpi con su flujo constante proporciona agua fresca y limpia a nuestro pozo de captación, 
+                ubicado en la ribera del río.
               </p>
               <p>
-                Nuestra misión es garantizar que cada hogar de Maicolpue tenga acceso a agua pura,
-                segura y confiable. Trabajamos día a día para mantener y mejorar nuestra
-                infraestructura, asegurando un servicio continuo y de excelencia.
+                Somos el <strong className="text-foreground">Sistema Sanitario Rural (SSR)</strong> de Maicolpue, 
+                encargados de captar, potabilizar y distribuir agua de la más alta calidad a los hogares 
+                de nuestra comunidad en la Región de Los Lagos.
               </p>
               <p>
-                Con años de experiencia sirviendo a nuestra comunidad, nos enorgullecemos de ser
-                parte fundamental del bienestar de las familias de Maicolpue.
+                Con bombas, sentinas de distribución, matrices y arranques cubrimos el 90% de Maicolpue, 
+                entregando agua según las especificaciones sanitarias vigentes.
               </p>
             </div>
 

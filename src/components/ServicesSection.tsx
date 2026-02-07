@@ -3,40 +3,40 @@ import { WaterDrop, ShieldIcon, UsersIcon, ZapIcon, ClockIcon } from "@/componen
 
 const services = [
   {
-    icon: WaterDrop,
-    title: "Agua Potable de Calidad",
+    icon: ShieldIcon,
+    title: "Protección Contra Bacterias",
     description:
-      "Suministro continuo de agua potable tratada y certificada, cumpliendo todos los estándares sanitarios.",
+      "El agua del río es naturalmente limpia. Desde el momento de la captación hacemos todo lo posible para asegurarnos de que el agua esté libre de bacterias.",
   },
   {
-    icon: ShieldIcon,
-    title: "Tratamiento Certificado",
+    icon: WaterDrop,
+    title: "Sin Contaminantes",
     description:
-      "Procesos de purificación y control de calidad constantes para garantizar agua segura para tu familia.",
+      "Durante el proceso de captación y almacenamiento, se realizan muestras de agua para verificación de nivel de cloro. Nuestra agua es la más pura de la Región.",
+  },
+  {
+    icon: ZapIcon,
+    title: "Distribución",
+    description:
+      "Se realiza con bombas, sentinas de distribución, matrices y arranques con las cuales se cubre el 90% de Maicolpue, entregando agua según las especificaciones sanitarias.",
   },
   {
     icon: ClockIcon,
-    title: "Servicio Continuo",
+    title: "Mantención",
     description:
-      "Disponibilidad las 24 horas del día, los 7 días de la semana, para que nunca te falte agua.",
+      "Mantenimiento constante de toda nuestra red de distribución, bombas y estanques para garantizar un servicio continuo y sin interrupciones.",
   },
   {
     icon: UsersIcon,
     title: "Atención Personalizada",
     description:
-      "Equipo comprometido con resolver tus consultas y mantener un servicio de excelencia.",
-  },
-  {
-    icon: ZapIcon,
-    title: "Respuesta Rápida",
-    description:
-      "Atención inmediata ante emergencias y reparaciones para minimizar interrupciones del servicio.",
+      "Equipo comprometido con resolver tus consultas y mantener un servicio de excelencia para la comunidad de Maicolpue.",
   },
   {
     icon: WaterDrop,
-    title: "Infraestructura Moderna",
+    title: "Agua de Cordillera",
     description:
-      "Red de distribución mantenida y actualizada para garantizar un flujo constante y presión adecuada.",
+      "Nuestra prístina agua fluye desde la cordillera de la costa. El río Maicolpi proporciona agua fresca y limpia a nuestro pozo de captación.",
   },
 ];
 
@@ -50,10 +50,10 @@ const ServicesSection = () => {
             Nuestros Servicios
           </span>
           <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-foreground mb-4">
-            Lo Que Ofrecemos
+            Nuestro Proceso
           </h2>
           <p className="text-muted-foreground text-lg">
-            Comprometidos con brindar el mejor servicio de agua potable a la comunidad de Maicolpue.
+            Desde la captación hasta tu hogar, garantizamos agua pura y segura para Maicolpue.
           </p>
         </div>
 

@@ -1,6 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { PhoneIcon, MailIcon, LocationIcon, ClockIcon } from "@/components/icons";
+const phoneNumber = "+56979684536";
+const emailAddress = "contacto@ssrmaicolpue.cl"
+const emailSubject = "Consulta - SSR Maicolpue";
+const emailBody = "Hola, me gustaría obtener más información sobre...";
 
 const contactInfo = [
   {
@@ -74,21 +78,28 @@ const ContactSection = () => {
           <Card variant="glass" className="inline-block max-w-2xl mx-auto">
             <CardContent className="p-8 sm:p-12">
               <h3 className="font-display font-bold text-2xl text-foreground mb-4">
-                ¿Necesitas Conectarte a Nuestro Servicio?
+                ¿Necesitas Contactarnos?
               </h3>
               <p className="text-muted-foreground mb-6">
-                Si deseas conectarte a nuestra red de agua potable o tienes alguna emergencia,
+                Si deseas contactarnos o tienes alguna emergencia o quieres reportar una fuga,
                 no dudes en comunicarte con nosotros.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href={`tel:${phoneNumber}`} className="hidden sm:flex">
                 <Button variant="water" size="lg">
                   <PhoneIcon className="w-5 h-5" />
                   Llamar Ahora
                 </Button>
+                </a>
+                <a 
+                  href={`mailto:${emailAddress}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`}
+                  className="hidden sm:flex"
+                    >
                 <Button variant="outline" size="lg">
                   <MailIcon className="w-5 h-5" />
                   Enviar Email
-                </Button>
+                  </Button>
+                  </a>
               </div>
             </CardContent>
           </Card>

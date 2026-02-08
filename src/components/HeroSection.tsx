@@ -7,6 +7,9 @@ const HeroSection = () => {
   const scrollToContact = () => {
     document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" });
   };
+  const scrollToAbout = () => {
+    document.getElementById("nosotros")?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <section
@@ -55,9 +58,9 @@ const HeroSection = () => {
             style={{ animationDelay: "0.6s" }}
           >
             <Button variant="hero" size="lg" onClick={scrollToContact}>
-              Solicitar Servicio
+              Consultas
             </Button>
-            <Button variant="heroOutline" size="lg">
+            <Button variant="heroOutline" size="lg" onClick={scrollToAbout}>
               Conoce Más
             </Button>
           </div>

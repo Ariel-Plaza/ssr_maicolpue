@@ -1,11 +1,13 @@
 import { PhoneIcon } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import logoImg from "@/assets/logo.svg";
 
 const Header = () => {
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
+  const phoneNumber = "+56979684536";
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-md border-b border-border/50">
@@ -13,9 +15,14 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
-            <div>
-              <h1 className="font-display font-bold text-lg text-foreground">SSR Maicolpue</h1>
-              <p className="text-xs text-muted-foreground">Agua Potable Rural</p>
+            <img 
+              src={logoImg} 
+              alt="SSR Maicolpue Logo" 
+              className="w-10 h-10 object-contain" 
+            />
+            <div className="flex flex-col">
+              <h1 className="font-display font-bold text-lg leading-none text-foreground">SSR Maicolpue</h1>
+              <p className="text-[10px] uppercase tracking-wider text-muted-foreground mt-1">Agua Potable Rural</p>
             </div>
           </Link>
 
@@ -66,10 +73,12 @@ const Header = () => {
           </nav>
 
           {/* CTA */}
+          <a href={`tel:${phoneNumber}`} className="hidden sm:flex">
           <Button variant="default" size="sm" className="hidden sm:flex">
             <PhoneIcon className="w-4 h-4" />
             Contáctanos
-          </Button>
+            </Button>
+            </a>
         </div>
       </div>
     </header>

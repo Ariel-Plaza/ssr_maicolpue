@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { WaterDrop } from "@/components/icons";
 import { Link } from "react-router-dom";
+import logoImg from "@/assets/logo.svg";
 
 const TarifasAcuerdos = () => {
   return (
@@ -10,15 +11,17 @@ const TarifasAcuerdos = () => {
       <header className="bg-card border-b border-border">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full gradient-ocean flex items-center justify-center shadow-water">
-                <WaterDrop className="w-6 h-6 text-primary-foreground" />
-              </div>
-              <div>
-                <h1 className="font-display font-bold text-lg text-foreground">SSR Maicolpue</h1>
-                <p className="text-xs text-muted-foreground">Agua Potable Rural</p>
-              </div>
-            </Link>
+           <Link to="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
+            <img 
+              src={logoImg} 
+              alt="SSR Maicolpue Logo" 
+              className="w-10 h-10 object-contain" 
+            />
+            <div className="flex flex-col">
+              <h1 className="font-display font-bold text-lg leading-none text-foreground">SSR Maicolpue</h1>
+              <p className="text-[10px] uppercase tracking-wider text-muted-foreground mt-1">Agua Potable Rural</p>
+            </div>
+          </Link>
             <Link to="/">
               <Button variant="outline" size="sm">
                 Volver al Inicio
@@ -47,19 +50,15 @@ const TarifasAcuerdos = () => {
               <div className="space-y-4">
                 <div className="flex justify-between items-center py-3 border-b border-border">
                   <span className="text-foreground">Cargo fijo mensual</span>
-                  <span className="font-semibold text-primary">$ ---</span>
+                  <span className="font-semibold text-primary">$6.000.-</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-border">
                   <span className="text-foreground">Consumo por m³ (hasta 15 m³)</span>
-                  <span className="font-semibold text-primary">$ ---</span>
-                </div>
-                <div className="flex justify-between items-center py-3 border-b border-border">
-                  <span className="text-foreground">Consumo por m³ (sobre 15 m³)</span>
-                  <span className="font-semibold text-primary">$ ---</span>
+                  <span className="font-semibold text-primary">$1.000.-</span>
                 </div>
                 <div className="flex justify-between items-center py-3">
-                  <span className="text-foreground">Derecho de conexión</span>
-                  <span className="font-semibold text-primary">$ ---</span>
+                  <span className="text-foreground">Derecho de reconexión</span>
+                  <span className="font-semibold text-primary">$ 50.000.-</span>
                 </div>
               </div>
               <p className="text-sm text-muted-foreground mt-6">

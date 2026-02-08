@@ -31,14 +31,16 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-background/50">
-            © {currentYear} SSR Maicolpue. Todos los derechos reservados.
+            © {currentYear} SSR Maicolpue
           </p>
         </div>
 
         {/* Decorative wave */}
         <div className="mt-8 pt-8 border-t border-background/10 text-center">
           <p className="text-xs text-background/40">
-            Maicolpue, San Juan de la costa - Región de Los Lagos, Chile
+            Desarrollador :
+            <a href="https://www.arielplaza.com">www.arielplaza.com</a>
+            
           </p>
         </div>
       </div>

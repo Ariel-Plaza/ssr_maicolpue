@@ -6,7 +6,7 @@ const contactInfo = [
   {
     icon: PhoneIcon,
     title: "Teléfono",
-    value: "+56 9 XXXX XXXX",
+    value: "+56 9 7968 4536",
     description: "Llámanos para consultas",
   },
   {
@@ -18,14 +18,14 @@ const contactInfo = [
   {
     icon: LocationIcon,
     title: "Ubicación",
-    value: "Maicolpue, Osorno",
+    value: "Maicolpue, San Juan de la costa",
     description: "Región de Los Lagos, Chile",
   },
   {
     icon: ClockIcon,
     title: "Horario Atención",
     value: "Lun - Vie: 9:00 - 18:00",
-    description: "Emergencias 24/7",
+    description: "Playa Central - Maicolpue",
   },
 ];
 

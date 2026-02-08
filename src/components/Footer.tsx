@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="flex items-center gap-3">
             <div>
               <h3 className="font-display font-bold text-lg">SSR Maicolpue</h3>
-              <p className="text-sm text-background/60">Agua Potable Rural</p>
+              <p className="text-sm text-background/60">Sistema Sanitario Rural</p>
             </div>
           </div>
 
@@ -38,7 +38,7 @@ const Footer = () => {
         {/* Decorative wave */}
         <div className="mt-8 pt-8 border-t border-background/10 text-center">
           <p className="text-xs text-background/40">
-            Maicolpue, Osorno - Región de Los Lagos, Chile
+            Maicolpue, San Juan de la costa - Región de Los Lagos, Chile
           </p>
         </div>
       </div>

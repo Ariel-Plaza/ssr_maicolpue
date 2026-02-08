@@ -73,7 +73,7 @@ const HeroSection = () => {
             </div>
             <div className="text-center">
               <p className="font-display font-bold text-3xl sm:text-4xl text-card">24/7</p>
-              <p className="text-sm text-card/70">Disponibilidad</p>
+              <p className="text-sm text-card/70">Agua Disponible</p>
             </div>
             <div className="text-center">
               <p className="font-display font-bold text-3xl sm:text-4xl text-card">100%</p>

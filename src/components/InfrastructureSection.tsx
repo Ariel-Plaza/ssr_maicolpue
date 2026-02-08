@@ -1,41 +1,50 @@
 import { Card } from "@/components/ui/card";
 
+// Paso 1: Importamos las imágenes (esto es necesario si están en src)
+// Si aún no tienes el archivo físico, VS Code te marcará un error rojo aquí.
+import bombaImg from "@/assets/infraestructura/bombaImg.jpg";
+import estanque1Img from "@/assets/infraestructura/estanque1Img.jpg";
+import valvulaImg from "@/assets/infraestructura/valvulaImg.jpg";
+import estanque2Img from "@/assets/infraestructura/estanque2Img.jpg";
+import auxiliaresImg from "@/assets/infraestructura/auxiliaresImg.jpg";
+import oficinaImg from "@/assets/infraestructura/oficinaImg.jpg";
+
 interface InfrastructureItem {
   title: string;
   description: string;
-  imagePlaceholder: string;
+  imagePlaceholder: string; // El programador la llamó así, así que la mantenemos
 }
 
 const infrastructureItems: InfrastructureItem[] = [
   {
     title: "Bomba de Captación",
     description: "Mediante la cual se traslada el agua obtenida desde el río hasta nuestro estanque.",
-    imagePlaceholder: "Foto de bomba de captación",
+    imagePlaceholder: bombaImg, // Usamos la variable importada
   },
   {
     title: "Estanque Principal",
     description: "Capacidad de 100.000 Lts, desde el cual se distribuye agua hacia todas las sentinas.",
-    imagePlaceholder: "Foto de estanque principal",
+    imagePlaceholder: estanque1Img,
   },
   {
     title: "Válvula de Ventos",
     description: "Sirve para retirar el aire que está en la matriz de distribución.",
-    imagePlaceholder: "Foto de válvula de ventos",
+    imagePlaceholder: valvulaImg,
   },
   {
     title: "Estanque Secundario",
     description: "Recibe y distribuye el agua a Maicolpue Río Sur y camino Tril Tril.",
-    imagePlaceholder: "Foto de estanque secundario",
+    imagePlaceholder: estanque2Img,
   },
   {
     title: "Estanques Auxiliares",
     description: "Almacenamos agua para tener siempre disponible en caso de corte o emergencia.",
-    imagePlaceholder: "Foto de estanques auxiliares",
+    imagePlaceholder: auxiliaresImg,
   },
   {
     title: "Oficina",
     description: "Ubicada en Playa Central, es base de nuestros operadores para la mantención de la red.",
-    imagePlaceholder: "Foto de oficina",
+    imagePlaceholder: oficinaImg,
   },
 ];
 
@@ -58,25 +67,13 @@ const InfrastructureSection = () => {
               key={index}
               className="overflow-hidden group hover:shadow-water transition-all duration-300"
             >
-              <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center border-b border-border">
-                <div className="text-center p-6">
-                  <div className="w-16 h-16 mx-auto mb-3 rounded-full bg-primary/20 flex items-center justify-center">
-                    <svg
-                      className="w-8 h-8 text-primary"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={1.5}
-                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                      />
-                    </svg>
-                  </div>
-                  <p className="text-sm text-muted-foreground">{item.imagePlaceholder}</p>
-                </div>
+              <div className="aspect-video overflow-hidden border-b border-border">
+                {/* Aquí se cumple la instrucción: Subes la imagen y se muestra aquí */}
+                <img 
+                  src={item.imagePlaceholder} 
+                  alt={item.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
               <div className="p-5">
                 <h3 className="font-display font-semibold text-lg text-foreground mb-2">
@@ -87,10 +84,6 @@ const InfrastructureSection = () => {
             </Card>
           ))}
         </div>
-
-        <p className="text-center text-sm text-muted-foreground mt-8">
-          * Para agregar fotos reales, sube las imágenes y se mostrarán aquí
-        </p>
       </div>
     </section>
   );

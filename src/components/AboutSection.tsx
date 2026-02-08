@@ -22,7 +22,7 @@ const AboutSection = () => {
                   <div className="w-24 h-24 rounded-full gradient-ocean flex items-center justify-center mx-auto shadow-glow mb-4 animate-float">
                     <WaterDrop className="w-12 h-12 text-primary-foreground" />
                   </div>
-                  <p className="font-display font-bold text-5xl text-primary">APR</p>
+                  <p className="font-display font-bold text-5xl text-primary">SSR</p>
                   <p className="text-muted-foreground text-sm">Maicolpue</p>
                 </div>
               </div>

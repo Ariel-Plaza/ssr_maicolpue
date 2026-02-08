@@ -7,12 +7,13 @@ interface TeamMember {
 }
 
 const teamMembers: TeamMember[] = [
-  { name: "Nombre Dirigente 1", role: "Presidente", category: "dirigente" },
-  { name: "Nombre Dirigente 2", role: "Secretario/a", category: "dirigente" },
-  { name: "Nombre Dirigente 3", role: "Tesorero/a", category: "dirigente" },
-  { name: "Nombre Dirigente 4", role: "Director/a", category: "dirigente" },
-  { name: "Nombre Trabajador 1", role: "Operador", category: "trabajador" },
-  { name: "Nombre Trabajador 2", role: "Técnico", category: "trabajador" },
+  { name: "", role: "Presidente", category: "dirigente" },
+  { name: "", role: "Secretario/a", category: "dirigente" },
+  { name: "", role: "Tesorero/a", category: "dirigente" },
+  { name: "", role: "Director/a", category: "dirigente" },
+  { name: "", role: "Administrador", category: "trabajador" },
+  { name: "", role: "Operador", category: "trabajador" },
+  { name: "", role: "Técnico", category: "trabajador" },
 ];
 
 const TeamSection = () => {
@@ -80,10 +81,6 @@ const TeamSection = () => {
             ))}
           </div>
         </div>
-
-        <p className="text-center text-sm text-muted-foreground mt-8">
-          * Para agregar fotos reales del equipo, sube las imágenes y se mostrarán aquí
-        </p>
       </div>
     </section>
   );
